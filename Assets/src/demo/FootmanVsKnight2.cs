@@ -54,7 +54,7 @@ public class FootmanVsKnight2 : MonoBehaviour
     // Right army.
     facingAngle = 90;
     units = FormationFactory.CreateRectFormation (
-      "Knight",
+      "ControllableKnight",
       center: new Vector2 (200, 0),
       facingAngle: facingAngle,
       width: 14,
