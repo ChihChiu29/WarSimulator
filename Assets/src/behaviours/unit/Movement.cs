@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
     }
     rigidbody2d.AddForceAtPosition (
       calculateForce (), 
-      math.Vec2.transformPoint2D (gameObject, unit.applyForceAtRelativePoint));
+      math.Vec2.TransformPoint2D (gameObject, unit.applyForceAtRelativePoint));
   }
 
   public bool doesArriveDestination ()

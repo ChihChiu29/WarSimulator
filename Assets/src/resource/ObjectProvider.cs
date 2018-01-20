@@ -13,10 +13,8 @@ namespace resource
     public static GameObject CreateGameObject (
       // Name of the prefab.
       string prefabName,
-      // Name of the object.
-      string name,
+      Vector2 location,
       // How much should the sprite be rotated counter-clockwisely.
-      Vector2 location = default(Vector2),
       float rotation = 0.0f)
     {
       GameObject obj = 
@@ -24,7 +22,6 @@ namespace resource
           Resources.Load<GameObject> (GetFullPath (prefabName)), 
           location,
           Quaternion.identity);
-      obj.name = name;
       obj.transform.Rotate (Vector3.forward * rotation);
       return obj;
     }
