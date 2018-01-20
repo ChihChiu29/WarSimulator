@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114435372242723882}
   - component: {fileID: 114977637170641208}
   - component: {fileID: 114141188282032652}
+  - component: {fileID: 114978844862266362}
   m_Layer: 0
   m_Name: Spearman
   m_TagString: Untagged
@@ -212,3 +213,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf4beb6c03d84148a95f10b0ef71b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114978844862266362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299344982719966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fc8020d40b3274d89556e010c432a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseButton: 0
