@@ -33,6 +33,11 @@ public class Attack : MonoBehaviour
       return;
     }
 
-    collUnit.currentHp -= unit.attackPower;
+    Vector2 relativePosition = transform.InverseTransformPoint (coll.gameObject.transform.position);
+    if (relativePosition.y <= 0) {
+      // Can only attack forward.
+      return;
+    }
+    collUnit.currentHp -= unit.attackPower * relativePosition.y / relativePosition.magnitude;
   }
 }

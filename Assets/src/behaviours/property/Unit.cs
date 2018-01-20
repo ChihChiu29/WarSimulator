@@ -11,11 +11,11 @@ public class Unit : MonoBehaviour
   public int formationGroup = 1;
 
   // === HP ===
-  public int maxHp = 100;
-  public int currentHp = 100;
+  public float maxHp = 100;
+  public float currentHp = 100;
 
   // === Attack ===
-  public int attackPower = 1;
+  public float attackPower = 1;
 
   // === Movement ===
   public Vector2 destination = Vector2.zero;

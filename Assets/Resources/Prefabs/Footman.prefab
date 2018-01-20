@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114465979382068390}
   - component: {fileID: 114056724498982576}
   - component: {fileID: 114472569392436976}
+  - component: {fileID: 114330926370598116}
   m_Layer: 0
   m_Name: Footman
   m_TagString: Untagged
@@ -170,6 +171,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf4beb6c03d84148a95f10b0ef71b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114330926370598116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1619367845237344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fc8020d40b3274d89556e010c432a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseButton: 0
 --- !u!114 &114465979382068390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,7 +220,7 @@ MonoBehaviour:
   formationGroup: 1
   maxHp: 100
   currentHp: 100
-  attackPower: 1
+  attackPower: 2
   destination: {x: -5, y: -5}
   applyForceAtRelativePoint: {x: 0, y: 0.5}
   maxVelocity: 5

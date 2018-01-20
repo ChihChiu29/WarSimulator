@@ -174,7 +174,7 @@ MonoBehaviour:
   formationGroup: 1
   maxHp: 100
   currentHp: 100
-  attackPower: 1
+  attackPower: 2
   destination: {x: 20, y: 0}
   applyForceAtRelativePoint: {x: 0, y: 0.5}
   maxVelocity: 4
