@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent (typeof(Unit))]
-[RequireComponent (typeof(TextMesh))]
+[RequireComponent (typeof(Unit), typeof(TextMesh))]
 public class RenderUnit : MonoBehaviour
 {
 
@@ -21,16 +20,16 @@ public class RenderUnit : MonoBehaviour
     unit = GetComponent<Unit> ();
     textMesh = GetComponent<TextMesh> ();
 
-    previousHp = unit.currentHp;
+    previousHp = -1;
     factionColor = GetColorForFactor (unit.faction);
   }
 	
   // Update is called once per frame
   void Update ()
   {
-//    if (previousHp == unit.currentHp) {
-//      return;
-//    }
+    if (previousHp == unit.currentHp) {
+      return;
+    }
 
     SetColorAccordingToHealth ();
     MaybeKillMe ();
@@ -51,8 +50,8 @@ public class RenderUnit : MonoBehaviour
 
   private void SetColorAccordingToHealth ()
   {
-    Color cc = deadColor + (float)unit.currentHp / unit.maxHp * (factionColor - deadColor);
-    textMesh.color = deadColor + (float)unit.currentHp / unit.maxHp * (factionColor - deadColor);
+    textMesh.color = deadColor +
+    (float)unit.currentHp / unit.maxHp * (factionColor - deadColor);
   }
 
   private void MaybeKillMe ()
