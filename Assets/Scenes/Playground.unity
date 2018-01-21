@@ -203,7 +203,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4027886651271522, guid: 66999ba8aafda474b80a6caee649b117, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 16.81143
+      value: 29.85
       objectReference: {fileID: 0}
     - target: {fileID: 4027886651271522, guid: 66999ba8aafda474b80a6caee649b117, type: 2}
       propertyPath: m_LocalPosition.y
@@ -376,22 +376,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f984338a75bac07438a749dfc2444980, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &656284705 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1218004341972976, guid: 123dd6d63c16ae14e896bdd7a21c5a87,
-    type: 2}
-  m_PrefabInternal: {fileID: 977455753}
---- !u!114 &656284706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 656284705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc5098dfb3581bf4ba6eeba68001aea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &751556005
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +477,7 @@ Prefab:
     - target: {fileID: 114030827291078658, guid: 123dd6d63c16ae14e896bdd7a21c5a87,
         type: 2}
       propertyPath: projectileVeclority
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114030827291078658, guid: 123dd6d63c16ae14e896bdd7a21c5a87,
         type: 2}
@@ -503,6 +487,16 @@ Prefab:
     - target: {fileID: 114030827291078658, guid: 123dd6d63c16ae14e896bdd7a21c5a87,
         type: 2}
       propertyPath: movementForce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030827291078658, guid: 123dd6d63c16ae14e896bdd7a21c5a87,
+        type: 2}
+      propertyPath: projectileCreationRelativePoint.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030827291078658, guid: 123dd6d63c16ae14e896bdd7a21c5a87,
+        type: 2}
+      propertyPath: rangedAttackReloadTimeSec
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -517,7 +511,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4545723874518768, guid: 1ca10da5a555c9f469c2e745cfcdcfde, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -33.12
       objectReference: {fileID: 0}
     - target: {fileID: 4545723874518768, guid: 1ca10da5a555c9f469c2e745cfcdcfde, type: 2}
       propertyPath: m_LocalPosition.y

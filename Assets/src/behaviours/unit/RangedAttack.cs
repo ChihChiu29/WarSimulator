@@ -19,9 +19,27 @@ public class RangedAttack : MonoBehaviour
     alarm = new Alarm (Time.time, unit.rangedAttackReloadTimeSec);
   }
 
+  void OnTriggerEnter2D (Collider2D coll)
+  {
+    MaybeFire (coll);
+  }
+
   void OnTriggerStay2D (Collider2D coll)
   {
-    float tt = Time.time;
+    Debug.Log (Time.time);
+    MaybeFire (coll);
+  }
+
+  private void MaybeFire (Collider2D coll)
+  {
+    Unit collUnit = coll.gameObject.GetComponent<Unit> ();
+    if (collUnit == null) {
+      return;
+    }
+
+    if (collUnit.faction == unit.faction) {
+      return;
+    }
     if (alarm.CheckTimeUp (Time.time)) {
       Fire (Vec2.FromVector3 (coll.gameObject.transform.position));
     }
