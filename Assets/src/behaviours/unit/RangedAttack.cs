@@ -63,6 +63,8 @@ public class RangedAttack : MonoBehaviour
     Vector2 direction = targetLocation - myPosition;
     proj.transform.GetComponent<Rigidbody2D> ().velocity =
       direction / direction.magnitude * unit.projectileVeclority;
+
+    proj.GetComponent<Projectile> ().fromFaction = unit.faction;
     return proj;
   }
 }
