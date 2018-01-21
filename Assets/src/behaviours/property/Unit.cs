@@ -15,7 +15,19 @@ public class Unit : MonoBehaviour
   public float currentHp = 100;
 
   // === Attack ===
-  public float attackPower = 1;
+  // # Melee
+  // Melee attack can only be applied to +/- 90 deg relative to the front direction, and the
+  // damage scales down from front attack to side attack.
+  public float meleeAttackPower = 0;
+  // # Ranged
+  // Can only attack within +/- this angle relative to the front direction.
+  public float rangedAttackAngleDeg = 45;
+  public float rangedAttackReloadTimeSec = 1;
+  // Where to create projectile for ranged attack.
+  public Vector2 projectileCreationRelativePoint = Vector2.zero;
+  // What projectile to create when firing.
+  public string projectilePrefabName = "";
+  public float projectileVeclority = 0;
 
   // === Movement ===
   public Vector2 destination = Vector2.zero;
@@ -23,5 +35,5 @@ public class Unit : MonoBehaviour
   public Vector2 applyForceAtRelativePoint = Vector2.zero;
   // Controls movement style.
   public float maxVelocity = 0;
-  public float force = 0;
+  public float movementForce = 0;
 }

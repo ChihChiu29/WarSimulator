@@ -12,7 +12,6 @@ public class FootmanVsKnight2 : MonoBehaviour
   void Start ()
   {
     GameObject[] units;
-    Vector2 marchUp = new Vector2 (0, 500);
     float facingAngle;
 
     // Left army.

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent (typeof(Unit))]
-public class Attack : MonoBehaviour
+public class MeleeAttack : MonoBehaviour
 {
   Unit unit;
   // Use this for initialization
@@ -38,6 +38,6 @@ public class Attack : MonoBehaviour
       // Can only attack forward.
       return;
     }
-    collUnit.currentHp -= unit.attackPower * relativePosition.y / relativePosition.magnitude;
+    collUnit.currentHp -= unit.meleeAttackPower * relativePosition.y / relativePosition.magnitude;
   }
 }

@@ -150,7 +150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64fc8020d40b3274d89556e010c432a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseButton: 1
 --- !u!114 &114079504797218268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -199,11 +198,16 @@ MonoBehaviour:
   formationGroup: 1
   maxHp: 150
   currentHp: 150
-  attackPower: 4
-  destination: {x: -50, y: -20}
+  meleeAttackPower: 5
+  rangedAttackAngleDeg: 45
+  rangedAttackReloadTimeSec: 1
+  projectileCreationRelativePoint: {x: 0, y: 0}
+  projectilePrefabName: 
+  projectileVeclority: 0
+  destination: {x: 0, y: 0}
   applyForceAtRelativePoint: {x: 0, y: 3}
-  maxVelocity: 30
-  force: 50
+  maxVelocity: 35
+  movementForce: 30
 --- !u!114 &114973394215623134
 MonoBehaviour:
   m_ObjectHideFlags: 1

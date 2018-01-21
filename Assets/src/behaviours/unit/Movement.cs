@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
   private Vector2 calculateForce ()
   {
     Vector2 relativeDestination = getVectorTowardsDestination ();
-    return relativeDestination / relativeDestination.magnitude * unit.force;
+    return relativeDestination / relativeDestination.magnitude * unit.movementForce;
   }
 
   private Vector2 getPosition ()
