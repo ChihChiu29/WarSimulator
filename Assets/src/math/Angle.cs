@@ -7,7 +7,8 @@ namespace math
   public class Angle
   {
     private static Vector2 xAxis = new Vector2 (1, 0);
-    
+
+    // Returns the angle of the vector targetLocation - baseLocation.
     // Returns: 0 means to the right.
     public static float GetAngleTowards (Vector2 baseLocation, Vector2 targetLocation)
     {
@@ -17,6 +18,12 @@ namespace math
       } else {
         return -Vector2.Angle (xAxis, baseToTarget);
       }
+    }
+
+    public static float GetLocalAngleTowards (Transform transform, Vector2 targetLocation)
+    {
+      Vector2 localDirectionToTarget = transform.InverseTransformPoint (targetLocation);
+      return GetAngleBetween (Vector2.up, localDirectionToTarget); 
     }
 
     // Similar to GetAngleTowards, but 0 means up.

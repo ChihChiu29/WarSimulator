@@ -40,6 +40,13 @@ public class RangedAttack : MonoBehaviour
     if (collUnit.faction == unit.faction) {
       return;
     }
+
+    float relativeAngle = 
+      Angle.GetLocalAngleTowards (transform, coll.gameObject.transform.position);
+    if (Mathf.Abs (relativeAngle) > unit.rangedAttackAngleDeg) {
+      return;
+    }
+
     if (alarm.CheckTimeUp (Time.time)) {
       Fire (Vec2.FromVector3 (coll.gameObject.transform.position));
     }
