@@ -7,8 +7,6 @@ using math;
 [RequireComponent (typeof(Unit))]
 public class MouseController : MonoBehaviour
 {
-  public int mouseButton = 0;
-
   Unit unit;
   // Use this for initialization
   void Start ()
@@ -19,8 +17,27 @@ public class MouseController : MonoBehaviour
   // Update is called once per frame
   void Update ()
   {
-    if (Input.GetMouseButtonDown (mouseButton)) {
-      unit.destination = Vec2.FromVector3 (Camera.main.ScreenToWorldPoint (Input.mousePosition));
+    switch (unit.faction) {
+    case 1:
+      if (Input.GetKeyDown (KeyCode.Alpha1)) {
+        GoToMousePostion ();
+      }
+      break;
+    case 2:
+      if (Input.GetKeyDown (KeyCode.Alpha2)) {
+        GoToMousePostion ();
+      }
+      break;
+    case 3:
+      if (Input.GetKeyDown (KeyCode.Alpha3)) {
+        GoToMousePostion ();
+      }
+      break;
     }
+  }
+
+  private void GoToMousePostion ()
+  {
+    unit.destination = Vec2.FromVector3 (Camera.main.ScreenToWorldPoint (Input.mousePosition));
   }
 }
