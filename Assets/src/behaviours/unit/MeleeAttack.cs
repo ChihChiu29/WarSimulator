@@ -5,10 +5,6 @@ using UnityEngine;
 [RequireComponent (typeof(Unit))]
 public class MeleeAttack : MonoBehaviour
 {
-  // Melee attack can only be applied to +/- 90 deg relative to the front direction, and the
-  // damage scales down from front attack to side attack.
-  public float meleeAttackPower = 0;
-
   Unit unit;
 
   void Start ()
