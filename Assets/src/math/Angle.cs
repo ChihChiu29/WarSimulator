@@ -19,6 +19,14 @@ namespace math
       }
     }
 
+    // Similar to GetAngleTowards, but 0 means up.
+    public static float GetRotationAngleForCreatingObject (
+      Vector2 baseLocation, 
+      Vector2 targetLocation)
+    {
+      return GetAngleTowards (baseLocation, targetLocation) - 90;
+    }
+
     // Same as Vector2.Angle, but with sign (counter-clockwisely).
     public static float GetAngleBetween (Vector2 start, Vector2 end)
     {

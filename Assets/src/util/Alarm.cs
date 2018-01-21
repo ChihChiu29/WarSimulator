@@ -20,7 +20,7 @@ namespace util
     public bool CheckTimeUp (float currentTime)
     {
       if (currentTime > previousAlarmTime + delay) {
-        currentTime = previousAlarmTime;
+        previousAlarmTime = currentTime;
         return true;
       } else {
         return false;

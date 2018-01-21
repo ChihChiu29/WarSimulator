@@ -9,53 +9,49 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1218004341972976}
+  m_RootGameObject: {fileID: 1165446659510690}
   m_IsPrefabParent: 1
---- !u!1 &1218004341972976
+--- !u!1 &1165446659510690
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4405141881290824}
-  - component: {fileID: 23168739516795696}
-  - component: {fileID: 102569646250727458}
-  - component: {fileID: 50108053810688296}
-  - component: {fileID: 61431678576510218}
-  - component: {fileID: 58031750824240532}
-  - component: {fileID: 114322745159242006}
-  - component: {fileID: 114030827291078658}
-  - component: {fileID: 114109972024901264}
-  - component: {fileID: 114317845103384094}
-  - component: {fileID: 114717079560405986}
-  - component: {fileID: 114805047575590106}
+  - component: {fileID: 4654580268787702}
+  - component: {fileID: 23905633094216924}
+  - component: {fileID: 102895469563575950}
+  - component: {fileID: 50138573901448820}
+  - component: {fileID: 61065264276191110}
+  - component: {fileID: 114376435865192184}
+  - component: {fileID: 114686501279895206}
+  - component: {fileID: 114035686502662118}
   m_Layer: 0
-  m_Name: Archer
+  m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4405141881290824
+--- !u!4 &4654580268787702
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
+  m_GameObject: {fileID: 1165446659510690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.342495, y: 3.7116854, z: 0}
+  m_LocalPosition: {x: 16.81143, y: 2.230558, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23168739516795696
+--- !u!23 &23905633094216924
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
+  m_GameObject: {fileID: 1165446659510690}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -84,13 +80,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!50 &50108053810688296
+--- !u!50 &50138573901448820
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
+  m_GameObject: {fileID: 1165446659510690}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -104,27 +100,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58031750824240532
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 30
---- !u!61 &61431678576510218
+--- !u!61 &61065264276191110
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
+  m_GameObject: {fileID: 1165446659510690}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -140,18 +121,18 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 0.90000004, y: 1.4523438}
+  m_Size: {x: 0.2, y: 1.2}
   m_EdgeRadius: 0
---- !u!102 &102569646250727458
+--- !u!102 &102895469563575950
 TextMesh:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
-  m_Text: A
+  m_GameObject: {fileID: 1165446659510690}
+  m_Text: '|'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -164,85 +145,41 @@ TextMesh:
   m_Font: {fileID: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
---- !u!114 &114030827291078658
+    rgba: 4281859840
+--- !u!114 &114035686502662118
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
+  m_GameObject: {fileID: 1165446659510690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4944b844a8214408989623661adad9, type: 3}
+  m_Script: {fileID: 11500000, guid: dc24cc1eefc15da49a524bb0376e641a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  faction: 1
-  formationGroup: 1
-  maxHp: 50
-  currentHp: 50
-  meleeAttackPower: 0
-  rangedAttackAngleDeg: 45
-  rangedAttackReloadTimeSec: 1
-  projectileCreationRelativePoint: {x: 0, y: 0}
-  projectilePrefabName: Arrow
-  projectileVeclority: 5
-  destination: {x: 0, y: 0}
-  applyForceAtRelativePoint: {x: 0, y: 0.5}
-  maxVelocity: 5
-  movementForce: 1
---- !u!114 &114109972024901264
+  lifetime: 10
+--- !u!114 &114376435865192184
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a33ab5e5bb99a849af392acb9c2db5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114317845103384094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bf4beb6c03d84148a95f10b0ef71b38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114322745159242006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
+  m_GameObject: {fileID: 1165446659510690}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 565a306a0e955094eb4c1e5607795ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114717079560405986
+--- !u!114 &114686501279895206
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
+  m_GameObject: {fileID: 1165446659510690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fba6cfef83bbdd146ac516c6e4b96ae4, type: 3}
+  m_Script: {fileID: 11500000, guid: b0d39ef7406869c4995be9cd95ec2da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeAttackPower: 0
---- !u!114 &114805047575590106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218004341972976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64fc8020d40b3274d89556e010c432a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  fromFaction: 1
+  directDamage: 0
+  createExplosionPrefabName: 

@@ -184,7 +184,7 @@ MonoBehaviour:
   destination: {x: 0, y: 0}
   applyForceAtRelativePoint: {x: 0, y: 0.5}
   maxVelocity: 4
-  movementForce: 1
+  movementForce: 1.5
 --- !u!114 &114141188282032652
 MonoBehaviour:
   m_ObjectHideFlags: 1
